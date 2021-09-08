@@ -606,9 +606,6 @@ header.header-bg {
   .section__title {
     font-size: var(--big-font-size);
   }
-  .nav-logo {
-    height: auto;
-  }
   .home-img {
     width: 200px;
     top: -14rem;
@@ -642,8 +639,16 @@ header.header-bg {
     justify-content: center;
   }
 }
+@media (max-width: 576px) {
+  .nav-logo {
+    height: 23px;
+  }
+}
 
 @media (min-width: 576px) {
+  .nav-logo {
+    height: initial;
+  }
   .home-container {
     grid-template-columns: 0.8fr 1fr;
   }
