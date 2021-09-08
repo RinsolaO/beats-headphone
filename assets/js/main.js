@@ -112,13 +112,14 @@ const sr = ScrollReveal({
 });
 
 sr.reveal(`.home-header, .section__title`);
+sr.reveal(` .footer-copyright`, { origin: "top", distance: "30px" });
 sr.reveal(`.home-img, .home-footer`, {
   origin: "top",
   delay: 1500,
   interval: 500,
   distance: "30px",
 });
-sr.reveal(` .products-card, .footer-copyright`, {
+sr.reveal(` .products-card`, {
   origin: "top",
   delay: 100,
   interval: 500,
