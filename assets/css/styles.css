@@ -606,6 +606,9 @@ header.header-bg {
   .section__title {
     font-size: var(--big-font-size);
   }
+  .nav-logo {
+    height: auto;
+  }
   .home-img {
     width: 200px;
     top: -14rem;
