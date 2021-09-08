@@ -108,18 +108,30 @@ const sr = ScrollReveal({
   distance: "80px",
   duration: 3000,
   delay: 400,
-  reset: true,
+  // reset: true,
 });
 
-sr.reveal(`.home-header, .section__title, .footer-container`);
-sr.reveal(`.home-img, .home-footer, .products-card, .footer-copyright`, {
+sr.reveal(`.home-header, .section__title`);
+sr.reveal(`.home-img, .home-footer, .footer-copyright`, {
   origin: "top",
-  delay: 2000,
+  delay: 1500,
+  interval: 500,
   distance: "30px",
 });
-sr.reveal(`.left-ani, .specs-content, .case-img,.discount-animate`, {
+sr.reveal(` .products-card`, {
+  origin: "top",
+  delay: 100,
+  interval: 500,
+  distance: "30px",
+});
+sr.reveal(` .sponsor-img, .footer-container`, {
+  origin: "bottom",
+  distance: "30px",
+  interval: 1000,
+});
+sr.reveal(`.specs-content, .case-img,.discount-animate`, {
   origin: "left",
 });
-sr.reveal(`.right-ani, .specs-img, .case-content, .discount-img`, {
+sr.reveal(`.specs-img, .case-content, .discount-img`, {
   origin: "right",
 });
